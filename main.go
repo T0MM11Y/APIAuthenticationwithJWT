@@ -48,5 +48,8 @@ func main() {
 		bookRoutes.DELETE("/:id", bookController.Delete)
 	}
 
+	//port
+	r.Run(":5000")
+
 	r.Run()
 }

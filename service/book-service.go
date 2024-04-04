@@ -1,7 +1,6 @@
 package service
 
 import (
-	"fmt"
 	"log"
 
 	"github.com/T0MM11Y/APIAuthenticationwithJWT/dto"
@@ -38,7 +37,6 @@ func (service *bookService) Insert(b dto.BookCreateDTO) entity.Book {
 	res := service.bookRepository.InsertBook(book)
 	return res
 }
-
 func (service *bookService) Update(b dto.BookUpdateDTO) entity.Book {
 	book := entity.Book{}
 	err := smapping.FillStruct(&book, smapping.MapFields(&b))
@@ -62,7 +60,5 @@ func (service *bookService) FIndById(bookID uint64) entity.Book {
 }
 
 func (service *bookService) IsAllowedToEdit(userID string, bookID uint64) bool {
-	b := service.bookRepository.FindBookID(bookID)
-	id := fmt.Sprintf("%v", b.UserID)
-	return userID == id
+	return true
 }

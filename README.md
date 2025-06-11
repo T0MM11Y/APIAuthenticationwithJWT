@@ -1,4 +1,4 @@
-## 📚 APIAuthenticationwithJWT: Secure Your APIs with Modern JWT Authentication
+## APIAuthenticationwithJWT: Secure Your APIs with Modern JWT Authentication
 
 APIAuthenticationwithJWT offers a cutting-edge solution for securing APIs using JSON Web Tokens (JWT). With intuitive integration and robust functionality, it ensures seamless authentication and authorization, bolstering the security of your API endpoints.
 
